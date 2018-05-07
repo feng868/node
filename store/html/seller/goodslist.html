@@ -1,0 +1,43 @@
+{% extends './commond.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="../../static/seller/css/goodslist.css">
+{% endblock %}
+{% block content %}
+<div id="main">
+    <div class="main-top">
+     <span>商品</span>
+        <div>
+           <ul>
+               <li>商品金额</li>
+               <li>操作</li>
+           </ul>
+        </div>
+    </div>
+    <div class="main-list">
+       <ul>
+           {% for goods in goodsList%}
+           <li>
+               <ul>
+                   <li>
+                        <img src="{{goods.breviaryPath[0]}}"
+                   </li>
+                   <li> <p>{{goods.introduce}}</p>
+                       <p>{{goods.introduce}}</p></li>
+                   <li>{{goods.price}}</li>
+                   <li>
+                       <a href="##">修改</a>
+                       <a href="/modify-goods">删除</a>
+                   </li>
+               </ul>
+           </li>
+           {% endfor%}
+       </ul>
+    </div>
+<div class="add-goods">
+
+       <a href="/add-goods">新增商品</a>
+
+</div>
+</div>
+{% endblock %}

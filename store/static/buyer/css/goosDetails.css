@@ -1,0 +1,57 @@
+
+#main{
+    overflow: hidden;
+    margin:100px 320px
+}
+.main-left{
+    float:left;
+    width: 300px;
+    height: 300px;
+
+
+}
+.main-left img{
+    width: 300px;
+    height: 300px;
+    border: 10px solid #ccc;
+    box-sizing: border-box;
+}
+.main-right{
+    float: left;
+    width: 300px;
+    height: 300px;
+
+}
+
+.main-right ul .title{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+.main-right ul .ins{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+.main-right ul .price{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 32px;
+    color: #f40;
+}
+.main-right ul .buy{
+    margin-top: 50px;
+
+    margin-left: 20px;
+}
+.main-right ul .buy input{
+    width: 150px;
+    height: 40px;
+    background: #F40;
+    border:0;
+    color: #fff;
+    font-size:16px
+}

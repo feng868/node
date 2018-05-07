@@ -1,0 +1,28 @@
+{% extends './commond.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="../../static/buyer/css/goosDetails.css">
+{% endblock%}
+
+{% block content %}
+
+<div id="main">
+   <div class="main-left">
+        <img src="{{goodsInfo.detailsPath[0]}}"/>
+   </div>
+    <div class="main-right">
+        <ul>
+            <li class="title">{{goodsInfo.name}}</li>
+            <li class="ins">{{goodsInfo.introduce}}</li>
+            <li class="price"><span>价格：￥</span>{{goodsInfo.price}}</li>
+            <li class="buy">
+                <input type="button" value="购买" class="buy-btn">
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock%}
+
+{% block js %}
+<script src="../../static/buyer/js/buy.js"></script>
+{% endblock%}

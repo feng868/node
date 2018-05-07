@@ -1,0 +1,21 @@
+$(function(){
+    $(".buy-btn").click(function(){
+        $.ajax({
+            url:"/api/buy",
+            type:"post",
+            data:{
+                baseUrl:window.location.href,
+                count:1,
+            },
+            success:function(data){
+                console.log(data);
+                if(data.status==0){
+                   location.href="/myorder";
+                }else{
+                    alert(data.message);
+                }
+            },
+            error:function(){}
+        })
+    })
+})

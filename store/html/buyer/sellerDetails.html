@@ -1,0 +1,32 @@
+{% extends './commond.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="../../static/buyer/css/sellerDetails.css">
+{% endblock%}
+{% block content %}
+<div id="banner">
+    <img src="{{sellerInfo.bannerPath}}"/>
+</div>
+<div id="logo">
+    <img src="{{sellerInfo.logoPath}}"/><span>{{sellerInfo.user}}</span>
+</div>
+<div id="list">
+    <div class="more">
+        <span>商品列表</span>
+    </div>
+    <div class="shop">
+        <ul>
+            {% for goods in goodsList %}
+            <li>
+                <a href="/goodsDetails?goodsId={{goods._id.toString()}}">
+                    <img src="{{goods.breviaryPath[0]}}">
+                    <span>{{goods.name}}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+{% endblock%}

@@ -1,0 +1,55 @@
+#mian{
+
+    width: 100%;
+    overflow: hidden;
+}
+ .more{
+    height: 40px;
+    background: #eee;
+    line-height: 40px;
+    overflow: hidden;
+     margin-top: 20px;
+}
+ .more span{
+    float: left;
+    font-size: 16px;
+    margin-left: 60px;
+}
+ .more a{
+    float: right;
+    font-size: 16px;
+    margin-right: 60px;
+}
+.shop{
+    margin: 20px 60px 0px;
+}
+.shop ul{
+    overflow: hidden;
+}
+.shop ul li{
+    padding:0px 20px;
+    border:1px solid #000;
+    height: 260px;
+    width: 260px;
+    box-sizing: border-box;
+    margin-right: 34px;
+    float: left;
+    margin-top: 20px;
+}
+.shop ul li:nth-child(4n){
+    margin-right: 0;
+}
+.shop ul li img{
+    margin-top: 10px;
+    height: 200px;
+    width: 220px;
+}
+.shop ul li span{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size:24px;
+    text-align: center;
+    width: 100%;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/seller/css/commond.css">
+    <link rel="stylesheet" href="../../static/seller/css/reset.css">
+    {% block css%}{% endblock%}
+</head>
+<body>
+<div id="header">
+    <div class="logo">
+        <h1>
+            <a href="##">
+                <img src="../../static/buyer/images/newlogo.png"/>
+            </a>
+        </h1>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="/">商品管理</a> </li>
+            <li><a href="/order-list">订单列表</a> </li>
+            <li><a href="/sellerUser">个人中心</a></li>
+            <li><a href="/logout">退出</a></li>
+
+
+        </ul>
+    </div>
+</div>
+<div id="content">
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+<div id="footer">
+    <p>关于2345 | 联系我们 | 主页篡改举报 | 公益 | 隐私声明 | 版权所有 © 2345  沪ICP备12023051号-1 </p>
+</div>
+</body>
+</html>
+<script src="../../static/buyer/js/jquery-1.11.3.js"></script>
+{% block js%}{% endblock%}

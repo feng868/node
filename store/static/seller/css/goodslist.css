@@ -1,0 +1,79 @@
+#main{
+    margin-top: 20px;
+}
+.main-top{
+    padding: 0px 60px;
+    height: 40px;
+    line-height: 40px;
+    background: #eee;
+}
+.main-top span{
+    float: left;
+    font-size: 14px;
+}
+
+.main-top ul{
+    overflow: hidden;
+    float: right;
+}
+.main-top ul li{
+    float: left;
+    margin-right: 45px;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+}
+.main-top ul li:nth-child(1){
+    margin-right: 0px;
+}
+.main-list{
+    padding:0px 60px;
+}
+.main-list ul li>ul{
+    overflow: hidden;
+}
+.main-list>ul>li{
+    padding:20px 0px;
+    border-bottom: 2px solid #ccc;
+}
+.main-list ul li>ul>li{
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    font-size: 14px;
+    height: 80px;
+}
+.main-list ul li>ul>li:nth-child(1){
+    width: 100px;
+    border:1px solid #ccc
+}
+.main-list ul li>ul>li:nth-child(1) img{
+    width: 100px;
+    height: 80px;
+}
+.main-list ul li>ul>li:nth-child(2){
+    width: 800px;
+    text-align: left;
+    margin-left: 10px;
+}
+.main-list ul li>ul>li:nth-child(2) p{
+    line-height: 40px;
+}
+.main-list ul li>ul>li:nth-child(3){
+    width: 100px;
+}
+.main-list ul li>ul>li:nth-child(4){
+    width: 100px;
+}
+.main-list ul li>ul>li:nth-child(4) a{
+    width: 100px;
+    line-height: 60px;
+    height: 20px;
+    display: block;
+}
+.add-goods{
+    margin: 40px 60px;
+}
+.add-goods a{
+    font-size: 16px;
+}

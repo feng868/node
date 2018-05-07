@@ -1,0 +1,21 @@
+{% extends './commond.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="../../static/buyer/css/index.css">
+{% endblock%}
+{% block content %}
+<div id="list">
+    <div class="shop">
+        <ul>
+            {% for seller in sellerAllList %}
+            <li>
+                <a href="/sellerDetails?sellerId={{seller._id.toString()}}">
+                <img src="{{seller.logoPath}}">
+                <span>{{seller.user}}</span>
+            </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock%}

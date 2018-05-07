@@ -1,0 +1,45 @@
+
+{% extends './commond.html' %}
+
+{% block css%}
+<link rel="stylesheet" href="../../static/buyer/css/index.css">
+{% endblock%}
+
+{% block content%}
+<div id="mian">
+    <div class="more">
+        <span>商品</span>
+        <a href="##">更多</a>
+    </div>
+    <div class="shop">
+        <ul>
+            {% for goods in goodsList %}
+            <li class="goods">
+                <a href="/goodsDetails?goodsId={{goods._id.toString()}}">
+                <img src="{{goods.breviaryPath[0]}}">
+                <span>{{goods.name}}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div id="list">
+    <div class="more">
+        <span>店铺</span>
+        <a href="##">更多</a>
+    </div>
+    <div class="shop">
+        <ul>
+            {% for seller in sellerList %}
+            <li>
+                <a href="/sellerDetails?sellerId={{seller._id.toString()}}">
+                <img src="{{seller.logoPath}}">
+                <span>{{seller.user}}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock%}

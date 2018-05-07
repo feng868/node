@@ -1,0 +1,39 @@
+{% extends './commond.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="../../static/seller/css/order-lisr.css">
+{% endblock %}
+{% block content %}
+<div id="main">
+    <div class="main-top">
+        <span>商品</span>
+        <div>
+            <ul>
+                <li>商品金额</li>
+                <li>操作</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-list">
+        <ul>
+            {% for seller in sellerList %}
+            <li>
+                <ul>
+                    <li>
+                      <img src="{{seller.goods.breviaryPath}}"/>
+                    </li>
+                    <li> <p>{{seller.goods.name}}</p>
+                        <p>{{seller.goods.introduce}}</p></li>
+                    <li>{{seller.goods.price}}</li>
+                    <li>
+                       <a>发货</a>
+                    </li>
+
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+{% endblock %}
